@@ -1,5 +1,5 @@
 /*
- *     PFM_ReadWrite
+ *     PFM_IO
  *
  *     Authors:  Antoine TOISOUL LE CANN
  *
@@ -7,7 +7,7 @@
  *              All rights reserved
  *
  *
- * PFM_ReadWrite is free software: you can redistribute it and/or modify
+ * PFM_IO is free software: you can redistribute it and/or modify
  *
  * it under the terms of the GNU Lesser General Public License as published by
  *
@@ -15,7 +15,7 @@
  *
  * (at your option) any later version.
  *
- * PFM_ReadWrite is distributed in the hope that it will be useful,
+ * PFM_IO is distributed in the hope that it will be useful,
  *
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  *
@@ -59,12 +59,12 @@ int main(){
       }
   }
 
-  savePFM(f1_img, "/home/tcr/pro_toolkit/PFM_ReadWrite/data/f1.pfm");
-  savePFM(f3_img, "/home/tcr/pro_toolkit/PFM_ReadWrite/data/f3.pfm");
+  savePFM(f1_img, "/home/tcr/pro_toolkit/PFM_IO/data/f1.pfm");
+  savePFM(f3_img, "/home/tcr/pro_toolkit/PFM_IO/data/f3.pfm");
 
 
-  cv::Mat f1_img2 = loadPFM(std::string("/home/tcr/pro_toolkit/PFM_ReadWrite/data/f1.pfm"));
-  cv::Mat f3_img2 = loadPFM(std::string("/home/tcr/pro_toolkit/PFM_ReadWrite/data/f3.pfm"));
+  cv::Mat f1_img2 = loadPFM(std::string("/home/tcr/pro_toolkit/PFM_IO/data/f1.pfm"));
+  cv::Mat f3_img2 = loadPFM(std::string("/home/tcr/pro_toolkit/PFM_IO/data/f3.pfm"));
 
   std::cout<<"f1_img2.cols "<<f1_img2.cols<<std::endl;
   std::cout<<"f1_img2.rows "<<f1_img2.rows<<std::endl;

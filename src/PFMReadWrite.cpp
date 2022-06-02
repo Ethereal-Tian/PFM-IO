@@ -1,5 +1,5 @@
 /*
- *     PFM_ReadWrite
+ *     PFM_IO
  *
  *     Author:  Antoine TOISOUL LE CANN
  *
@@ -7,7 +7,7 @@
  *              All rights reserved
  *
  *
- * PFM_ReadWrite is free software: you can redistribute it and/or modify
+ * PFM_IO is free software: you can redistribute it and/or modify
  *
  * it under the terms of the GNU Lesser General Public License as published by
  *
@@ -15,7 +15,7 @@
  *
  * (at your option) any later version.
  *
- * PFM_ReadWrite is distributed in the hope that it will be useful,
+ * PFM_IO is distributed in the hope that it will be useful,
  *
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  *

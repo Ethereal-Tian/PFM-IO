@@ -107,11 +107,11 @@ if __name__ == '__main__':
   print('f3_img',f3_img.shape,f3_img.dtype,type(f3_img))
 
 
-  writePFM('/home/tcr/pro_toolkit/PFM_ReadWrite/data/f1.pfm',f1_img)
-  writePFM('/home/tcr/pro_toolkit/PFM_ReadWrite/data/f3.pfm',f3_img)
+  writePFM('/home/tcr/pro_toolkit/PFM_IO/data/f1.pfm',f1_img)
+  writePFM('/home/tcr/pro_toolkit/PFM_IO/data/f3.pfm',f3_img)
 
-  f1_img2 = readPFM('/home/tcr/pro_toolkit/PFM_ReadWrite/data/f1.pfm').astype(np.float32)
-  f3_img2 = readPFM('/home/tcr/pro_toolkit/PFM_ReadWrite/data/f3.pfm').astype(np.float32)
+  f1_img2 = readPFM('/home/tcr/pro_toolkit/PFM_IO/data/f1.pfm').astype(np.float32)
+  f3_img2 = readPFM('/home/tcr/pro_toolkit/PFM_IO/data/f3.pfm').astype(np.float32)
 
   print('f1_img2',f1_img2.shape,f1_img2.dtype,type(f1_img2))
   print('f3_img2',f3_img2.shape,f3_img2.dtype,type(f3_img2))
