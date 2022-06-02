@@ -103,9 +103,11 @@ if __name__ == '__main__':
     # ('theta_spec', 0.6523129681485362, 0.0, (820, 1268), dtype('<f8'), <type 'numpy.ndarray'>)
     # ('N_guide', nan, nan, (820, 1268, 3), dtype('<f8'), <type 'numpy.ndarray'>)
 
-    test_img = readPFM('/home/tcr/pro_toolkit/PFM_IO/data_io/sgbm_normal_img.pfm').astype(np.float32)
-    print(N_guide[100,200,0],N_guide[100,200,0],N_guide[100,200,0])
-    print(test_img[100,200,0],test_img[100,200,0],test_img[100,200,0])
+    read_depth_img_img = readPFM('/home/tcr/pro_toolkit/PFM_IO/data_io/sgbm_depth_img.pfm')
+    read_normal_img_img = readPFM('/home/tcr/pro_toolkit/PFM_IO/data_io/sgbm_normal_img.pfm')
 
     print(N_guide[200,200,0],N_guide[200,200,0],N_guide[200,200,0])
-    print(test_img[200,200,0],test_img[200,200,0],test_img[200,200,0])
+    print(read_normal_img_img[200,200,0],read_normal_img_img[200,200,0],read_normal_img_img[200,200,0])
+
+    print(depthmap[100,200],depthmap[200,200],depthmap[200,100])
+    print(read_depth_img_img[100,200],read_depth_img_img[200,200],read_depth_img_img[200,100])

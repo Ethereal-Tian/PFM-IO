@@ -11,11 +11,11 @@ include_directories(${OpenCV_DIRS})
 add_library(pfm_io src/PFMReadWrite.cpp)
 target_link_libraries(pfm_io ${OpenCV_LIBS} )
 
-add_executable(pfm_main src/main.cpp)
+add_executable(pfm_main src/pfm_main.cpp)
 target_link_libraries(pfm_main pfm_io ${OpenCV_LIBS})
 
-
-
+add_executable(pfm_test src/pfm_test.cpp)
+target_link_libraries(pfm_test pfm_io ${OpenCV_LIBS})
 
 
 

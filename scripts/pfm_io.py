@@ -55,14 +55,16 @@ def writePFM(file, array):
         H = array.shape[0]
         W = array.shape[1]
         if len(array.shape) == 2:
-          headers = ["Pf\n", f"{W} {H}\n", "-1\n"]
+          # headers = ["Pf\n", f"{W} {H}\n", "-1\n"]
+          headers = ["Pf\n", f"{W} {H}\n", "-1.000000\n"]
         elif len(array.shape) == 3:
-          headers = ["PF\n", f"{W} {H}\n", "-1\n"]
+          # headers = ["PF\n", f"{W} {H}\n", "-1\n"]
+          headers = ["PF\n", f"{W} {H}\n", "-1.000000\n"]
         for header in headers:
             f.write(str.encode(header))
         array = np.flip(array, axis=0).astype(np.float32)
         f.write(array.tobytes())
-    
+
 # def readExr(filename):
 #     File = OpenEXR.InputFile(filename)
 #     PixType = Imath.PixelType(Imath.PixelType.FLOAT)
@@ -123,3 +125,4 @@ if __name__ == '__main__':
   for v in range(f3_img.shape[1]):
     for u in range(f3_img.shape[0]):
       print(u,v,f3_img[u,v],f3_img2[u,v])
+
